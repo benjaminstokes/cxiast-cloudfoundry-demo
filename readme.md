@@ -14,6 +14,24 @@ Push the application
 ## Notes
 * The agent takes a while to instrument applications and this will likely trigger Cloud Foundry health checks at 60 seconds. Try setting to the maximum (180s) timeout or switch the health check type to 'process'
 
+## Logs
+ssh to your app container
+
+```cf ssh cxiast-cloudfoundry-demo```
+
+cd to the logs folder
+
+```~/app/.java-buildpack/cx_iast_agent/logs```
+
+tail or more the logs
+
+```tail -f java*log``` 
+
+```more java*log```
+
+
+
+
 ## Todo
 Change buildpack to find CxServer from a CF User Provided Service. Detect will use this and pull the Agent zip file from it.
 
