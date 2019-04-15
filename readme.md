@@ -14,11 +14,11 @@ Login to the CLI
 
 Create a user provided service named checkmarx-iast and specify the uri to your CxIAST server.
 
-```cf cups checkmarx -p '{"iast_server":"http://http://iast30.cx.sekots.org:8380"}''```
+```cf cups checkmarx -p '{"iast_server":"http://iast30.cx.sekots.org:8380"}'```
 
 On powershell, escape double quotes:
 
-```cf cups checkmarx -p '{\"iast_server\":\"http://http://iast30.cx.sekots.org:8380\"}''```
+```cf cups checkmarx -p '{\"iast_server\":\"http://iast30.cx.sekots.org:8380\"}'```
 
 Push the application
 
