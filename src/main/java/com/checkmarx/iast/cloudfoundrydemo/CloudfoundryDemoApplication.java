@@ -17,6 +17,7 @@ public class CloudfoundryDemoApplication {
 		SpringApplication.run(CloudfoundryDemoApplication.class, args);
 	}
 
+	// trigger 
 
 	@GetMapping("/helloworld")
 	public String helloWorld(@RequestParam("msg") String msg) {
